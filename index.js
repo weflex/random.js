@@ -1,7 +1,7 @@
 "use strict";
 
 function strings (nchars) {
-  const buffer = '';
+  var buffer = '';
   const coll = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   for (let c = 0; c < nchars; c++) {
     buffer += coll.charAt(Math.floor(Math.random() * coll.length));
@@ -10,7 +10,7 @@ function strings (nchars) {
 }
 
 function digits (nchars) {
-  const buffer = '';
+  var buffer = '';
   const coll = '0123456789';
   for (let c = 0; c < nchars; c++) {
     buffer += coll.charAt(Math.floor(Math.random() * coll.length));
