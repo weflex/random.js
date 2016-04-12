@@ -3,7 +3,7 @@
 function strings (nchars) {
   var buffer = '';
   const coll = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  for (let c = 0; c < nchars; c++) {
+  for (var c = 0; c < nchars; c++) {
     buffer += coll.charAt(Math.floor(Math.random() * coll.length));
   }
   return buffer;
@@ -12,7 +12,7 @@ function strings (nchars) {
 function digits (nchars) {
   var buffer = '';
   const coll = '0123456789';
-  for (let c = 0; c < nchars; c++) {
+  for (var c = 0; c < nchars; c++) {
     buffer += coll.charAt(Math.floor(Math.random() * coll.length));
   }
   return buffer;
